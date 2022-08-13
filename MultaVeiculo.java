@@ -1,4 +1,4 @@
-package _15_java_2;
+package logica_programacao_java;
 
 import java.util.Scanner;
 
@@ -27,8 +27,18 @@ public class MultaVeiculo {
         boolean multaCarro = velocidadeVeiculo > carroAcimaVelocidade;
         boolean multaCaminhao = velocidadeVeiculo > caminhaoAcimaLimite;
 
-        if(multaCarro) {
-            System.out.println();
+        if(tipoVeiculo == 1 && multaCarro) {
+            int valorMulta = 5 * (velocidadeVeiculo - carroAcimaVelocidade);
+
+            System.out.println("\nVeículo multado! Valor da taxa: R$" + valorMulta);
+        } else if(tipoVeiculo == 2 && multaCaminhao) {
+            int valorMulta = 10 * (velocidadeVeiculo - caminhaoAcimaLimite);
+
+            System.out.println("\nVeículo multado! Valor da taxa: R$" + valorMulta);
+        } else if(tipoVeiculo == 1 || tipoVeiculo == 2) {
+            System.out.println("\nVeículo dentro do limite!");
+        } else {
+            System.out.println("\nValor inválido!");
         }
     }
 }
