@@ -1,4 +1,4 @@
-package logica_programacao_java;
+package _15_java_2;
 
 import java.util.Scanner;
 
@@ -10,10 +10,10 @@ public class MultaVeiculo {
         int velocidadeMaxima = 0, velocidadeVeiculo = 0;
 
         System.out.println("\"Departamento de Trânsito e Transporte\"\n");
-        System.out.println("Escolha o veículo: \n1. Carro \n2. Caminhão");
+        System.out.println("Escolha o veículo: \n- Carro \n- Caminhão");
 
-        System.out.print("\nOpção: ");
-        int tipoVeiculo = sc.nextInt();
+        System.out.print("\nDigite: ");
+        String tipoVeiculo = sc.next();
 
         System.out.print("\nInforme a velocidade máxima permitida: ");
         velocidadeMaxima = sc.nextInt();
@@ -21,24 +21,24 @@ public class MultaVeiculo {
         System.out.print("Valocidade do veículo: ");
         velocidadeVeiculo = sc.nextInt();
 
-        int carroAcimaVelocidade = velocidadeMaxima + ((velocidadeMaxima / 100) * 10);
-        int caminhaoAcimaLimite = velocidadeMaxima + ((velocidadeMaxima / 100) * 5);
+        float carroAcimaVelocidade = (float) (velocidadeMaxima + ((velocidadeMaxima * 0.10)));
+        float caminhaoAcimaLimite = (float) (velocidadeMaxima + ((velocidadeMaxima * 0.05)));
 
         boolean multaCarro = velocidadeVeiculo > carroAcimaVelocidade;
         boolean multaCaminhao = velocidadeVeiculo > caminhaoAcimaLimite;
 
-        if(tipoVeiculo == 1 && multaCarro) {
-            int valorMulta = 5 * (velocidadeVeiculo - carroAcimaVelocidade);
+        if(tipoVeiculo.equals("Carro") && multaCarro) {
+            float valorMulta = 5 * (velocidadeVeiculo - carroAcimaVelocidade);
 
             System.out.println("\nVeículo multado! Valor da taxa: R$" + valorMulta);
-        } else if(tipoVeiculo == 2 && multaCaminhao) {
-            int valorMulta = 10 * (velocidadeVeiculo - caminhaoAcimaLimite);
+        } else if(tipoVeiculo.equals("Caminhão") && multaCaminhao) {
+            float valorMulta = 10 * (velocidadeVeiculo - caminhaoAcimaLimite);
 
             System.out.println("\nVeículo multado! Valor da taxa: R$" + valorMulta);
-        } else if(tipoVeiculo == 1 || tipoVeiculo == 2) {
+        } else if(tipoVeiculo.equals("Carro") || tipoVeiculo.equals("Caminhão")) {
             System.out.println("\nVeículo dentro do limite!");
         } else {
-            System.out.println("\nValor inválido!");
+            System.out.println("\nNome inválido!");
         }
     }
 }
