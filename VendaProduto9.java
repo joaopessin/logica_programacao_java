@@ -16,7 +16,7 @@ public class VendaProduto {
         int quantidadeProduto = entrada.nextInt();
 
         float subtotal = valorProduto * quantidadeProduto;
-        float valorDesconto = (float) (subtotal * 0.9);
+        float valorDesconto = (float) (subtotal - (subtotal * 0.10);
 
         System.out.println((quantidadeProduto > 10) ? "Valor total com 10% de desconto: " + valorDesconto : "Valor total: " + subtotal);
     }
