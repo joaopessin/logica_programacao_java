@@ -1,20 +1,27 @@
-package _11_java_2;
+package _12_logica_3_8;
 
 import java.util.Scanner;
 
-public class alunoPassou {
+public class AlunoPassou {
+    static final Float NOTA_APROVACAO = 70.0F;
+
     public static void main(String[] args) {
-        // Saber se o aluno passou de ano.
         Scanner sc = new Scanner(System.in);
 
-        // Receber nota do aluno.
-        System.out.print("Informe sua nota: ");
-        double notaAluno = sc.nextDouble();
+        System.out.print("Informe a primeira nota: ");
+        double nota1 = sc.nextDouble();
 
-        // Checar se aluno passou.
-        boolean alunoAprovado = notaAluno >= 70;
+        System.out.print("Agora, informe a segunda nota: ");
+        double nota2 = sc.nextDouble();
 
-        // Imprimir resultado.
+        double somaNotas = nota1 + nota2;
+        double quantidadeNotas = 2;
+        double mediaNotas = somaNotas / quantidadeNotas;
+
+        boolean alunoAprovado = mediaNotas >= NOTA_APROVACAO;
+
+        System.out.println("\nMédia do aluno: " + mediaNotas);
+
         if(alunoAprovado) {
             System.out.println("Aluno aprovado com sucesso!");
         } else {
