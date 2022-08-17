@@ -15,7 +15,7 @@ public class AlunoPassou {
         float nota2 = (float) sc.nextDouble();
 
         float somaNotas = (float) (nota1 + nota2);
-        float quantidadeNotas = 2.F;
+        float quantidadeNotas = 2.0F;
         float mediaNotas = (float) (somaNotas / quantidadeNotas);
 
         boolean alunoAprovado = mediaNotas >= NOTA_APROVACAO;
