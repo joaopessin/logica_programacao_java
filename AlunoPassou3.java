@@ -21,11 +21,7 @@ public class AlunoPassou {
         boolean alunoAprovado = mediaNotas >= NOTA_APROVACAO;
 
         System.out.println("\nMédia do aluno: " + mediaNotas);
+        System.out.println(alunoAprovado ? "Aluno aprovado!" : "Aluno reprovado!");
 
-        if(alunoAprovado) {
-            System.out.println("Aluno aprovado com sucesso!");
-        } else {
-            System.out.println("Aluno reprovado!");
-        }
     }
 }
