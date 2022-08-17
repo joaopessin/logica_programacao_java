@@ -9,19 +9,18 @@ public class AlunoPassou {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Informe a primeira nota: ");
-        double nota1 = sc.nextDouble();
+        float nota1 = (float) sc.nextDouble();
 
         System.out.print("Agora, informe a segunda nota: ");
-        double nota2 = sc.nextDouble();
+        float nota2 = (float) sc.nextDouble();
 
-        double somaNotas = nota1 + nota2;
-        double quantidadeNotas = 2;
-        double mediaNotas = somaNotas / quantidadeNotas;
+        float somaNotas = (float) (nota1 + nota2);
+        float quantidadeNotas = 2.F;
+        float mediaNotas = (float) (somaNotas / quantidadeNotas);
 
         boolean alunoAprovado = mediaNotas >= NOTA_APROVACAO;
 
         System.out.println("\nMédia do aluno: " + mediaNotas);
         System.out.println(alunoAprovado ? "Aluno aprovado!" : "Aluno reprovado!");
-
     }
 }
