@@ -18,5 +18,5 @@
     Se ele ficou de recuperação, pergunte a nota da prova de recuperação, calcule a média final + nota da prova de recuperação e mostre se ele foi aprovado ou não.
     
    Exercício Profissional:
-    1_ Pergunte a quantidade de pacientes, leia o nome de cada um usando o "for" e armazene em um vetor. Exiba o nome de cada paciente no final.
+    1_ Pergunte a quantidade de pacientes ao usuário, leia o nome de cada um usando o "for" e os armazene em um vetor. Exiba o nome de cada paciente no final.
 */
