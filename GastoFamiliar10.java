@@ -34,5 +34,7 @@ public class GastoFamiliar2 {
         somaTotalGastos += gastoSupermercado;
 
         System.out.println("\nGasto total: R$" + somaTotalGastos);
+        
+        entrada.close();
     }
 }
