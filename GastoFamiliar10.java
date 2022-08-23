@@ -10,29 +10,22 @@ public class GastoFamiliar2 {
 
         System.out.println("Informe os valores gastos com...\n");
         System.out.print("Conta de luz: ");
-        float contaLuz = entrada.nextFloat();
+        somaTotalGastos += entrada.nextFloat();
 
         System.out.print("Conta de água: ");
-        float contaAgua = entrada.nextFloat();
+        somaTotalGastos += entrada.nextFloat();
 
         System.out.print("Conta de telefone: ");
-        float contaTelefone = entrada.nextFloat();
+        somaTotalGastos += entrada.nextFloat();
 
         System.out.print("Escola do filho: ");
-        float escolaFilho = entrada.nextFloat();
+        somaTotalGastos += entrada.nextFloat();
 
         System.out.print("Fatura do cartão: ");
-        float faturaCartao = entrada.nextFloat();
+        somaTotalGastos += entrada.nextFloat();
 
         System.out.print("Gasto no supermercado: ");
-        float gastoSupermercado = entrada.nextFloat();
-
-        somaTotalGastos += contaLuz;
-        somaTotalGastos += contaAgua;
-        somaTotalGastos += contaTelefone;
-        somaTotalGastos += escolaFilho;
-        somaTotalGastos += faturaCartao;
-        somaTotalGastos += gastoSupermercado;
+        somaTotalGastos += entrada.nextFloat();
 
         System.out.println("\nGasto total: R$" + somaTotalGastos);
 
