@@ -16,4 +16,7 @@
     2_ Pergunte ao aluno quantas notas ele deseja calcular, usa o "for" para ler todas as notas e depois calcule e exiba a média final do aluno.
     Também mostre se ele foi aprovado (media 7), reprovado direto (menor que 4) ou ficou de recuperação.
     Se ele ficou de recuperação, pergunte a nota da prova de recuperação, calcule a média final + nota da prova de recuperação e mostre se ele foi aprovado ou não.
+    
+   Exercício Profissional:
+    1_ Pergunte a quantidade de pacientes, leia o nome de cada um usando o "for" e armazene em um vetor. Exiba o nome de cada paciente no final.
 */
