@@ -12,10 +12,13 @@ public class FaturamentoEmpresa {
 
         System.out.print("Informe o faturamento anual da empresa: ");
         faturamentoReal = entrada.nextFloat();
+        
+        boolean metaAtingida = faturamentoReal >= metaAnual;
+        boolean metaParcial = faturamentoReal >= (metaAnual / 100) * 80;
 
-        if(faturamentoReal >= metaAnual) {
+        if(metaAtingida) {
             mediaSalarial = aumentoSalarial;
-        } else if(faturamentoReal >= (metaAnual / 100) * 80) {
+        } else if(metaParcial) {
             mediaSalarial = quebraSalarial;
         } else {
             mediaSalarial = salarioMinimo;
