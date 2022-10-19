@@ -15,6 +15,6 @@ public class Estoque_23_3 {
         System.out.print("\nOpção: ");
         int opcaoUsuario = sc.nextInt();
 
-        produtos[(i - 1)].descrever();
+        produtos[opcaoUsuario - 1].descrever();
     }
 }
