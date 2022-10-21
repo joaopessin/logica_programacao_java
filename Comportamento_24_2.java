@@ -4,7 +4,7 @@ public class Comportamento_24_2 {
     Integer temperaturaAtual = 21;
 
     public Comportamento_24_2(Integer temperaturaDesejada) {
-        if (temperaturaDesejada > 17 && temperaturaDesejada < 25) {
+        if (temperaturaDesejada >= 17 && temperaturaDesejada <= 25) {
             this.temperaturaAtual = temperaturaDesejada;
         } else if (temperaturaDesejada < 17) {
             System.err.println("Valor abaixo do permitido!");
