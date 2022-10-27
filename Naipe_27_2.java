@@ -5,6 +5,6 @@ public enum Naipe_27_2 {
 
     private String cor;
 
-    Naipe_27_2(String cor) { this.cor = cor; }
+    Naipe_27_2(String cor) { this.cor = cor; }  // Abominação.
     public String getCor() { return cor; }
 }
