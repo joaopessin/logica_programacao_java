@@ -1,4 +1,11 @@
-package _11_exercises._47_2_exercicio_interface.impressao.impressoras;
+package _11_exercises._47_1_exercicio_interface.impressao.impressoras;
 
-public class ImpressoraHP {
+import _11_exercises._47_1_exercicio_interface.impressao.Impressora;
+
+public class ImpressoraHP implements Impressora {
+    @Override
+    public void marcaImpressora() {
+        System.out.println("\n---------- IMPRESSORA HP ----------");
+    }
+
 }

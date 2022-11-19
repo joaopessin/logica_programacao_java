@@ -1,4 +1,5 @@
-package _11_exercises._47_2_exercicio_interface.impressao;
+package _11_exercises._47_1_exercicio_interface.impressao;
 
-public interface Imprimivel {
-}
+import _11_exercises._47_1_exercicio_interface.caixa.Compra;
+
+public interface Imprimivel { public void comprovante(Compra compra, Impressora impressora); }
