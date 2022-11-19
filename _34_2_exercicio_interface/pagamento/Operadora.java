@@ -1,4 +1,5 @@
-package _11_exercises._47_2_exercicio_interface.pagamento;
+package _11_exercises._47_1_exercicio_interface.pagamento;
 
-public interface Operadora {
-}
+import _11_exercises._47_1_exercicio_interface.caixa.Compra;
+
+public interface Operadora { public void autorizarCartao(Cartao cartao, Compra compra); }

@@ -1,5 +1,3 @@
-package _11_exercises._47_2_exercicio_interface.impressao;
+package _11_exercises._47_1_exercicio_interface.impressao;
 
-public interface Impressora {
-
-}
+public interface Impressora { public void marcaImpressora(); }
