@@ -1,4 +1,4 @@
-package _11_exercises._49_1_jogadores;
+package _37_jogadores;
 
 import java.io.*;
 import java.util.Scanner;
